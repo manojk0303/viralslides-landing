@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're In! - ViralSlides</title>
+    <meta name="description" content="Successfully joined ViralSlides early access. You'll get free credits when we launch!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-in': 'bounceIn 0.8s ease-out',
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        bounceIn: {
+                            '0%': { transform: 'scale(0.3)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-green-900 via-purple-900 to-blue-900 min-h-screen text-white overflow-x-hidden">
+    <!-- Background Animation -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style="animation-delay: -4s;"></div>
+    </div>
+
+    <div class="relative z-10 min-h-screen flex items-center justify-center px-6">
+        <div class="text-center max-w-2xl mx-auto">
+            <!-- Success Icon -->
+            <div class="animate-bounce-in mb-8">
+                <div class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
+                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Success Message -->
+            <div class="animate-fade-in" style="animation-delay: 0.3s;">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    You're In! 🎉
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-green-200 mb-8 leading-relaxed">
+                    Successfully joined the ViralSlides early access list!
+                </p>
+            </div>
+
+            <!-- What Happens Next -->
+            <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-green-400/30 animate-fade-in" style="animation-delay: 0.6s;">
+                <h2 class="text-2xl font-bold mb-6 text-green-400">What happens next?</h2>
+                
+                <div class="space-y-4 text-left">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-white font-bold text-sm">1</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-green-300">You'll Get One Email</h3>
+                            <p class="text-gray-300 text-sm">When ViralSlides launches, I'll send you login details + free credits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-white font-bold text-sm">2</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-green-300">Free Credits Worth $50+</h3>
+                            <p class="text-gray-300 text-sm">Enough to generate slides for a full month of promotion</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-white font-bold text-sm">3</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-green-300">No Spam, Ever</h3>
+                            <p class="text-gray-300 text-sm">That's literally the only email you'll get from me (unless you want updates)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Share -->
+            <div class="mt-12 animate-fade-in" style="animation-delay: 0.9s;">
+                <p class="text-purple-300 mb-6">Help spread the word to fellow indie developers!</p>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://twitter.com/intent/tweet?text=Just%20joined%20%40manojkumark_cpy's%20ViralSlides%20early%20access!%20Free%20AI-powered%20TikTok%20slide%20generator%20for%20app%20promotion%20🚀" 
+                       target="_blank" 
+                       class="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-105 flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18.258 3.266c-.659.295-1.364.497-2.107.583.757-.453 1.338-1.169 1.611-2.023-.708.42-1.492.722-2.323.888-.667-.711-1.617-1.154-2.668-1.154-2.019 0-3.657 1.638-3.657 3.657 0 .286.032.565.094.83C7.36 5.836 4.474 4.394 2.566 2.161c-.313.538-.492 1.163-.492 1.83 0 1.267.644 2.386 1.623 3.04-.598-.019-1.162-.183-1.653-.456v.047c0 1.77 1.259 3.246 2.93 3.58-.306.083-.628.128-.961.128-.234 0-.462-.023-.684-.067.463 1.444 1.808 2.496 3.403 2.525-1.249.979-2.823 1.561-4.531 1.561-.294 0-.585-.017-.871-.051 1.616 1.037 3.533 1.641 5.596 1.641 6.714 0 10.383-5.562 10.383-10.384 0-.158-.004-.316-.01-.472.714-.515 1.332-1.158 1.821-1.891l-.001-.001z"/>
+                        </svg>
+                        <span>Share on X</span>
+                    </a>
+                    
+                    <a href="/" 
+                       class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105">
+                        ← Back to Home
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="mt-12 pt-8 border-t border-white/20 animate-fade-in" style="animation-delay: 1.2s;">
+                <p class="text-gray-400 text-sm">
+                    Questions? Reach out: 
+                    <a href="mailto:manojk030303@gmail.com" class="text-green-400 hover:text-green-300 underline">manojk030303@gmail.com</a>
+                </p>
+                <p class="text-gray-500 text-xs mt-2">
+                    Built with ❤️ by <a href="https://x.com/manojkumark_cpy" class="text-purple-400 hover:text-purple-300">@manojkumark_cpy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
